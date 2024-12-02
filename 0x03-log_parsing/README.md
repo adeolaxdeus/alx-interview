@@ -1,33 +1,22 @@
-# Project Name
-**0x03. Log Parsing**
+# 0x03-log_parsing
 
-## Author's Details
-Name: *Wendy Munyasi.*
+Write a script that reads stdin line by line and computes metrics:
 
-Email: *wendymunyasi@gmail.com*
+```
+Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size> (if the format is not this one, the line must be skipped)
+After every 10 lines and/or a keyboard interruption (CTRL + C), print these statistics from the beginning:
+Total file size: File size: <total size>
+where <total size> is the sum of all previous <file size> (see input format above)
+Number of lines by status code:
+possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
+if a status code doesn’t appear or is not an integer, don’t print anything for this status code
+format: <status code>: <number>
+status codes should be printed in ascending order
+Warning: In this sample, you will have random value - it’s normal to not have the same output as this one.
+```
 
-Tel: *+254707240068.*
+## Example
 
-##  Requirements
-
-### Python Scripts
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS using gcc, using python3 (version 3.8.5).
-*   All your files should end with a new line.
-*   The `main.py` files are used to test your functions, but you don’t have to push them to your repo.
-*   The first line of all your files should be exactly `#!/usr/bin/python3`.
-*   Your code should use the pycodestyle (version `2.8.*`).
-*   All your files must be executable.
-*   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`).
-*   All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)`' and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`).
-*   A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified).
-
-
-## Project Description
-
-* **0. Log parsing** - Write a script that reads `stdin` line by line and computes metrics. - `0-stats.py`.
-
-    ```
     alexa@ubuntu:~/0x03-log_parsing$ cat 0-generator.py
     #!/usr/bin/python3
     import random
@@ -89,9 +78,3 @@ Tel: *+254707240068.*
         sleep(random.random())
     KeyboardInterrupt
     alexa@ubuntu:~/0x03-log_parsing$ 
-    ```
----
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.

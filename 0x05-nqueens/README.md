@@ -1,33 +1,20 @@
-# Project Name
-**0x05. N Queens**
+# 0x05. N Queens
 
-## Author's Details
-Name: *Wendy Munyasi.*
+## Task
+    The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
 
-Email: *wendymunyasi@gmail.com*
+    Usage: nqueens N
+    If the user called the program with the wrong number of arguments, print Usage: nqueens N, followed by a new line, and exit with the status 1
+    where N must be an integer greater or equal to 4
+    If N is not an integer, print N must be a number, followed by a new line, and exit with the status 1
+    If N is smaller than 4, print N must be at least 4, followed by a new line, and exit with the status 1
+    The program should print every possible solution to the problem
+    One solution per line
+    Format: see example
+    You don’t have to print the solutions in a specific order
+    You are only allowed to import the sys module
 
-Tel: *+254707240068.*
-
-##  Requirements
-
-### Python Scripts
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS using gcc, using python3 (version 3.8.5).
-*   All your files should end with a new line.
-*   The `main.py` files are used to test your functions, but you don’t have to push them to your repo.
-*   The first line of all your files should be exactly `#!/usr/bin/python3`.
-*   Your code should use the pycodestyle (version `2.8.*`).
-*   All your files must be executable.
-*   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`).
-*   All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)`' and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`).
-*   A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified).
-
-
-## Project Description
-
-* **0. N queens** - Write a program that solves the N queens problem. - `0-nqueens.py`.
-
-    ```
+## Example
     julien@ubuntu:~/0x08. N Queens$ ./0-nqueens.py 4
     [[0, 1], [1, 3], [2, 0], [3, 2]]
     [[0, 2], [1, 0], [2, 3], [3, 1]]
@@ -37,9 +24,4 @@ Tel: *+254707240068.*
     [[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]
     [[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
     julien@ubuntu:~/0x08. N Queens$
-    ```
----
-
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.To be updated later
+  

@@ -1,33 +1,36 @@
-# Project Name
-**0x01. Lockboxes**
+# 0x01-lockboxes
 
-## Author's Details
-Name: *Wendy Munyasi.*
+## LockBoxes Challenge:
+    You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
 
-Email: *wendymunyasi@gmail.com*
+    Write a method that determines if all the boxes can be opened.
 
-Tel: *+254707240068.*
+    Prototype: def canUnlockAll(boxes)
+    boxes is a list of lists
+    A key with the same number as a box opens that box
+    You can assume all keys will be positive integers
+    There can be keys that do not have boxes
+    The first box boxes[0] is unlocked
+    Return True if all boxes can be opened, else return False
 
-##  Requirements
+### Example:
+    carrie@ubuntu:~/0x01-lockboxes$ cat main_0.py
+    #!/usr/bin/python3
 
-### Python Scripts
-*   Allowed editors: `vi`, `vim`, `emacs`.
-*   All your files will be interpreted/compiled on Ubuntu 20.04 LTS using gcc, using python3 (version 3.8.5).
-*   All your files should end with a new line.
-*   The `main.py` files are used to test your functions, but you don’t have to push them to your repo.
-*   The first line of all your files should be exactly `#!/usr/bin/python3`.
-*   Your code should use the pycodestyle (version `2.8.*`).
-*   All your files must be executable.
-*   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`).
-*   All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)`' and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`).
-*   A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified).
+    canUnlockAll = __import__('0-lockboxes').canUnlockAll
 
+    boxes = [[1], [2], [3], [4], []]
+    print(canUnlockAll(boxes))
 
-## Project Description
+    boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
+    print(canUnlockAll(boxes))
 
-* **0. Lockboxes** - Write a method that determines if all the boxes can be opened. - `0-rectangle.py`.
+    boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
+    print(canUnlockAll(boxes))
 
 
-## Collaborate
-
-To collaborate, reach me through my email address wendymunyasi@gmail.com.
+    carrie@ubuntu:~/0x01-lockboxes$ ./main_0.py
+    True
+    True
+    False
+    carrie@ubuntu:~/0x01-lockboxes$
